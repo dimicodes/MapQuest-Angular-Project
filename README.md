@@ -47,3 +47,7 @@ To configure the MapQuest API integration, you will need to obtain an API key fr
 // src/app/mapquest.service.ts
 private apiKey = 'YOUR_MAPQUEST_API_KEY_HERE';
 ```
+
+## Preview
+
+![image](https://github.com/dimicodes/MapQuest-Angular-Project/assets/45632694/a2a3040e-ac3e-4c08-81b1-a5c7ad0e94fd)
