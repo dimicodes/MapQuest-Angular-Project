@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    color: white;
+    line-height: 2.5;
+    font-size: 1.1rem;
+}
+
+

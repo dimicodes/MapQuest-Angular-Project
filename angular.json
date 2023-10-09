@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "hw5-part1": {
+    "MapQuest": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/hw5-part1",
+            "outputPath": "dist/MapQuest",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "hw5-part1:build:production"
+              "browserTarget": "MapQuest:build:production"
             },
             "development": {
-              "browserTarget": "hw5-part1:build:development"
+              "browserTarget": "MapQuest:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "hw5-part1:build"
+            "browserTarget": "MapQuest:build"
           }
         },
         "test": {

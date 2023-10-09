@@ -1,0 +1,63 @@
+<h1 class="title">MapQuest</h1>
+
+<div *ngIf="directionsData">
+  <div class="location-input-container">
+    <div class="location-input">
+      <label for="fromLocation">From: </label>
+      <input
+        type="text"
+        id="fromLocation"
+        [(ngModel)]="from"
+        placeholder="Enter From Location"
+        size="45"
+        (ngModelChange)="updateDirections()"
+      />
+    </div>
+
+    <br />
+
+    <div class="location-input">
+      <label for="toLocation">To: </label>
+      <input
+        type="text"
+        id="toLocation"
+        [(ngModel)]="to"
+        placeholder="Enter To Location"
+        size="45"
+        (ngModelChange)="updateDirections()"
+      />
+    </div>
+  </div>
+  <br />
+  <table class="table-top">
+    <tr class="table-top">
+      <th class="table-top-th">
+        Total Distance:
+        {{ directionsData.route.distance | number : "1.0-0" }} mi
+      </th>
+      <th class="table-top-th">
+        Total Time:
+        {{ directionsData.route.formattedTime }}
+      </th>
+    </tr>
+  </table>
+  <table>
+    <tr
+      *ngFor="let step of directionsData.route.legs[0].maneuvers; let i = index"
+      (click)="showRawData(i)"
+    >
+      <td class="numbering">{{ i + 1 }}.</td>
+      <td>{{ step.narrative }}</td>
+      <td class="miles-distance">{{ step.distance | number : "1.0-3" }} mi</td>
+    </tr>
+  </table>
+
+  <!-- display raw data for the selected step -->
+  <div class="raw-data" *ngIf="selectedStep !== undefined">
+    <h3>Raw Data for Step {{ selectedStep + 1 }} :</h3>
+    <pre class="raw-data-narrative">{{
+      directionsData.route.legs[0].maneuvers[selectedStep].narrative | json
+    }}</pre>
+    <pre>{{ directionsData.route.legs[0].maneuvers[selectedStep] | json }}</pre>
+  </div>
+</div>

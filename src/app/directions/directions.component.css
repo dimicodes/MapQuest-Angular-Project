@@ -1,0 +1,61 @@
+.title {
+    color: #3b534a;
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+.raw-data {
+    color: #2a2a2a;
+}
+
+.raw-data-narrative {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.location-input-container {
+    display: flex;          
+  }
+  
+.location-input {
+    margin-right: 20px;
+    color: #3b534a;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+input {
+    height: 25px;
+    font-size: 1.1rem;
+}
+
+table {
+    background-color: #2a2a2a;
+    width: 80%;
+    border: #3b534a;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.table-top {
+    background-color: #3b534a;
+    border: none !important; 
+    margin: 0;    
+    padding: 0;   
+}
+
+.table-top-th {
+    padding: 0 !important;
+    border: none !important;
+}
+
+td {
+    padding-left: 50px !important;
+}
+
+.numbering {
+    width: 50px;
+}
+.miles-distance {
+    width: 100px;
+}

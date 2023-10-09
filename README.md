@@ -1,27 +1,49 @@
-# Hw5Part1
+# Angular MapQuest Directions App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+This Angular application provides a simple interface to fetch and display directions from one location to another using the MapQuest Directions API.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Display turn-by-turn directions, total distance, and total time for a given route.
+- Convert distances to meters for better accuracy.
+- View raw data for each step of the route.
+- Automatic updates when changing the "From" or "To" locations.
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Follow these steps to run the application locally:
 
-## Build
+1. Clone this repository to your local machine:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+git clone https://github.com/your-username/angular-mapquest-directions-app.git
+```
 
-## Running unit tests
+2. Change to the project directory:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+cd angular-mapquest-directions-app
+```
 
-## Running end-to-end tests
+3. Install the project dependencies:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+npm install
+```
 
-## Further help
+4. Start the development server:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+ng serve
+```
+
+5. Open your web browser and visit http://localhost:4200 to use the application.
+
+## Configuration
+
+To configure the MapQuest API integration, you will need to obtain an API key from MapQuest. Once you have the API key, replace the placeholder in the mapquest.service.ts file with your actual API key.
+
+```
+// src/app/mapquest.service.ts
+private apiKey = 'YOUR_MAPQUEST_API_KEY_HERE';
+```
