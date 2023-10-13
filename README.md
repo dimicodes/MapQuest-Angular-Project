@@ -50,4 +50,4 @@ private apiKey = 'YOUR_MAPQUEST_API_KEY_HERE';
 
 ## Preview
 
-![image](https://github.com/dimicodes/MapQuest-Angular-Project/assets/45632694/a2a3040e-ac3e-4c08-81b1-a5c7ad0e94fd)
+![image](https://github.com/dimicodes/MapQuest-Angular-Project/assets/45632694/b0ceadc3-7659-4918-a65c-48d81a5b8f61)
